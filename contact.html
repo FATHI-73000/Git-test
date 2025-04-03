@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title> Formulaire html</title>
+</head>
+
+<body>
+    <section>
+        <h1> Contactez-nous </h1>
+
+        <p> un probléme, une question, N'hésitez pas à utiliser ce formulaire pour prender contact avec nous : </p>
+
+        <form method="post" action=" https://httpbin.org/post">
+
+            <div>
+                <label for="NOM-PRENOM"> NOM PRENOM</label>
+                <input type="text" name="NOM-PRENOM" id="NOM-PRENOM" placeholder=" MARTIN MARTIN" required>
+
+            </div>
+
+            <div>
+                <label for="MAIL"> MAIL</label>
+
+                <input type="email" name="MAIL" id="MAIL" placeholder="monadresse@mail.com" required>   
+            </div>
+
+
+            <div>
+
+                <label for="SUJET"> QUEL EST VOTRE SUJET ?</label>
+                <input type="text" name="SUJET" id="SUJET">
+
+            </div>
+            <div>
+
+                <label for="SUJET"> QUEL EST VOTRE SUJET ?</label>
+                <select name=" SUJET" id="sujet" required>
+                    <option value="" disabled selected hidden> Choisissez le sujet de votre commentaire </option>
+                    <option value="probléme-générale"> probléme avec notre service</option>
+                    <option value="Question-Commande"> Question à propos votre commande </option>
+                    <option value="Autre"> Autre...</option>
+                </select>
+
+            </div>
+            <label for="message"> votre message</label>
+            <textarea id="message" name="message" placeholder=" Bonjour, je vous contact car..." required></textarea>
+
+            <div>
+                <button type="submit"> envoyer un message</button>
+
+            </div>
+
+
+            <div>
+                <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
+                <textarea name="ameliorer" id="ameliorer"></textarea>
+            </div>
+        </form>
+
+
+    </section>
+
+
+</body>
+
+</html>
